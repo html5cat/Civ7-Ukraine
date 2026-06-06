@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
 	<Types>
+		<Row Type="CIVILIZATION_PONTIC_SCYTHIA" Kind="KIND_CIVILIZATION"/>
+		<Row Type="CIVILIZATION_KYIVAN_RUS" Kind="KIND_CIVILIZATION"/>
+		<Row Type="CIVILIZATION_UKRAINE" Kind="KIND_CIVILIZATION"/>
 		<Row Type="TRAIT_PONTIC_SCYTHIA" Kind="KIND_TRAIT"/>
 		<Row Type="TRAIT_PONTIC_SCYTHIA_ABILITY" Kind="KIND_TRAIT"/>
 		<Row Type="TRAIT_KYIVAN_RUS" Kind="KIND_TRAIT"/>
@@ -8,17 +11,17 @@
 		<Row Type="TRAIT_UKRAINE" Kind="KIND_TRAIT"/>
 		<Row Type="TRAIT_UKRAINE_ABILITY" Kind="KIND_TRAIT"/>
 	</Types>
-	<Kinds>
-		<InsertOrIgnore KIND="KIND_TRAIT"/>
-	</Kinds>
 	<Civilizations>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" Name="LOC_CIVILIZATION_PONTIC_SCYTHIA_NAME" FullName="LOC_CIVILIZATION_PONTIC_SCYTHIA_FULLNAME" Description="LOC_CIVILIZATION_PONTIC_SCYTHIA_DESCRIPTION" Adjective="LOC_CIVILIZATION_PONTIC_SCYTHIA_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" ApexAge="AGE_ANTIQUITY" CapitalName="LOC_CITY_NAME_PONTIC_SCYTHIA_1" RandomCityNameDepth="12"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" Name="LOC_CIVILIZATION_KYIVAN_RUS_NAME" FullName="LOC_CIVILIZATION_KYIVAN_RUS_FULLNAME" Description="LOC_CIVILIZATION_KYIVAN_RUS_DESCRIPTION" Adjective="LOC_CIVILIZATION_KYIVAN_RUS_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" ApexAge="AGE_EXPLORATION" CapitalName="LOC_CITY_NAME_KYIVAN_RUS_1" RandomCityNameDepth="12"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" Name="LOC_CIVILIZATION_UKRAINE_NAME" FullName="LOC_CIVILIZATION_UKRAINE_FULLNAME" Description="LOC_CIVILIZATION_UKRAINE_DESCRIPTION" Adjective="LOC_CIVILIZATION_UKRAINE_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" ApexAge="AGE_MODERN" CapitalName="LOC_CITY_NAME_UKRAINE_1" RandomCityNameDepth="16"/>
 	</Civilizations>
 	<Traits>
+		<Row TraitType="TRAIT_PONTIC_SCYTHIA" InternalOnly="true"/>
 		<Row TraitType="TRAIT_PONTIC_SCYTHIA_ABILITY" Name="LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_NAME" Description="LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_DESCRIPTION" InternalOnly="true"/>
+		<Row TraitType="TRAIT_KYIVAN_RUS" InternalOnly="true"/>
 		<Row TraitType="TRAIT_KYIVAN_RUS_ABILITY" Name="LOC_TRAIT_KYIVAN_RUS_ABILITY_NAME" Description="LOC_TRAIT_KYIVAN_RUS_ABILITY_DESCRIPTION" InternalOnly="true"/>
+		<Row TraitType="TRAIT_UKRAINE" InternalOnly="true"/>
 		<Row TraitType="TRAIT_UKRAINE_ABILITY" Name="LOC_TRAIT_UKRAINE_ABILITY_NAME" Description="LOC_TRAIT_UKRAINE_ABILITY_DESCRIPTION" InternalOnly="true"/>
 	</Traits>
 	<CivilizationTraits>
@@ -67,6 +70,15 @@
 		<Row CivilizationType="CIVILIZATION_UKRAINE" ResourceType="RESOURCE_COAL" Score="5"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" ResourceType="RESOURCE_IRON" Score="5"/>
 	</StartBiasResources>
+	<CivilizationSyncretismUnlocks>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" UnlockCivilizationType="CIVILIZATION_KYIVAN_RUS"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" UnlockCivilizationType="CIVILIZATION_UKRAINE"/>
+	</CivilizationSyncretismUnlocks>
+	<LeaderSyncretismUnlocks>
+		<Row LeaderType="LEADER_XERXES" UnlockCivilizationType="CIVILIZATION_PONTIC_SCYTHIA"/>
+		<Row LeaderType="LEADER_CATHERINE" UnlockCivilizationType="CIVILIZATION_KYIVAN_RUS"/>
+		<Row LeaderType="LEADER_BENJAMIN_FRANKLIN" UnlockCivilizationType="CIVILIZATION_UKRAINE"/>
+	</LeaderSyncretismUnlocks>
 	<VisArt_CivilizationBuildingCultures>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" BuildingCulture="BUILDING_CULTURE_EEU_ANT"/>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" BuildingCulture="ANT_STONE"/>
