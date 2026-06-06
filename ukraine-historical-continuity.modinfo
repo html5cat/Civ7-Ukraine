@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ukraine-historical-continuity" version="1" xmlns="ModInfo">
+	<Properties>
+		<Name>LOC_MODULE_UKRAINE_HISTORICAL_CONTINUITY_NAME</Name>
+		<Description>LOC_MODULE_UKRAINE_HISTORICAL_CONTINUITY_DESCRIPTION</Description>
+		<Authors>Yurik and Codex</Authors>
+		<EnabledByDefault>1</EnabledByDefault>
+		<AffectsSavedGames>1</AffectsSavedGames>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME"/>
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet/>
+		</Criteria>
+		<Criteria id="antiquity-age-current">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+		</Criteria>
+		<Criteria id="exploration-age-current">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+		</Criteria>
+		<Criteria id="modern-age-current">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="ukraine-continuity-text" scope="game" criteria="always">
+			<Actions>
+				<UpdateText>
+					<Item>text/ModuleText.xml</Item>
+					<Item>text/CivilizationText.xml</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="ukraine-continuity-game-shared" scope="game" criteria="always">
+			<Actions>
+				<UpdateIcons>
+					<Item>data/icons/civilization-icons.xml</Item>
+				</UpdateIcons>
+				<UpdateDatabase>
+					<Item>data/civilizations-shared.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="ukraine-continuity-antiquity" scope="game" criteria="antiquity-age-current">
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/civilizations-antiquity.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="ukraine-continuity-exploration" scope="game" criteria="exploration-age-current">
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/civilizations-exploration.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="ukraine-continuity-modern" scope="game" criteria="modern-age-current">
+			<Actions>
+				<UpdateDatabase>
+					<Item>data/civilizations-modern.xml</Item>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="ukraine-continuity-shell" scope="shell" criteria="always">
+			<Actions>
+				<UpdateIcons>
+					<Item>data/icons/civilization-icons.xml</Item>
+				</UpdateIcons>
+				<UpdateDatabase>
+					<Item>config/config.xml</Item>
+				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/ModuleText.xml</Item>
+					<Item>text/CivilizationText.xml</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/ModuleText.xml</File>
+		<File>text/CivilizationText.xml</File>
+	</LocalizedText>
+</Mod>

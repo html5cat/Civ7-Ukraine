@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<IconDefinitions>
+		<Row>
+			<ID>CIVILIZATION_PONTIC_SCYTHIA</ID>
+			<Path>fs://game/civ_sym_unknown.png</Path>
+		</Row>
+		<Row>
+			<ID>CIVILIZATION_KYIVAN_RUS</ID>
+			<Path>fs://game/civ_sym_unknown.png</Path>
+		</Row>
+		<Row>
+			<ID>CIVILIZATION_UKRAINE</ID>
+			<Path>fs://game/civ_sym_unknown.png</Path>
+		</Row>
+	</IconDefinitions>
+</Database>

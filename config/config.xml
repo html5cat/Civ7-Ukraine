@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Civilizations>
+		<Row Domain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CivilizationName="LOC_CIVILIZATION_PONTIC_SCYTHIA_NAME" CivilizationFullName="LOC_CIVILIZATION_PONTIC_SCYTHIA_FULLNAME" CivilizationDescription="LOC_CIVILIZATION_PONTIC_SCYTHIA_DESCRIPTION" CivilizationIcon="CIVILIZATION_PONTIC_SCYTHIA" CivilizationIntroText="LOC_LOADING_CIV_INTRO_TEXT_PONTIC_SCYTHIA"/>
+		<Row Domain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_KYIVAN_RUS" CivilizationName="LOC_CIVILIZATION_KYIVAN_RUS_NAME" CivilizationFullName="LOC_CIVILIZATION_KYIVAN_RUS_FULLNAME" CivilizationDescription="LOC_CIVILIZATION_KYIVAN_RUS_DESCRIPTION" CivilizationIcon="CIVILIZATION_KYIVAN_RUS" CivilizationIntroText="LOC_LOADING_CIV_INTRO_TEXT_KYIVAN_RUS"/>
+		<Row Domain="ModernAgeCivilizations" CivilizationType="CIVILIZATION_UKRAINE" CivilizationName="LOC_CIVILIZATION_UKRAINE_NAME" CivilizationFullName="LOC_CIVILIZATION_UKRAINE_FULLNAME" CivilizationDescription="LOC_CIVILIZATION_UKRAINE_DESCRIPTION" CivilizationIcon="CIVILIZATION_UKRAINE" CivilizationIntroText="LOC_LOADING_CIV_INTRO_TEXT_UKRAINE"/>
+	</Civilizations>
+	<CivilizationItems>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" AgeType="AGE_ANTIQUITY" CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" Type="TRAIT_PONTIC_SCYTHIA_ABILITY" Kind="KIND_TRAIT" Name="LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_NAME" Description="LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_DESCRIPTION"/>
+		<Row CivilizationDomain="ExplorationAgeCivilizations" AgeType="AGE_EXPLORATION" CivilizationType="CIVILIZATION_KYIVAN_RUS" Type="TRAIT_KYIVAN_RUS_ABILITY" Kind="KIND_TRAIT" Name="LOC_TRAIT_KYIVAN_RUS_ABILITY_NAME" Description="LOC_TRAIT_KYIVAN_RUS_ABILITY_DESCRIPTION"/>
+		<Row CivilizationDomain="ModernAgeCivilizations" AgeType="AGE_MODERN" CivilizationType="CIVILIZATION_UKRAINE" Type="TRAIT_UKRAINE_ABILITY" Kind="KIND_TRAIT" Name="LOC_TRAIT_UKRAINE_ABILITY_NAME" Description="LOC_TRAIT_UKRAINE_ABILITY_DESCRIPTION"/>
+	</CivilizationItems>
+	<CivilizationTags>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TagType="TAG_TRAIT_MILITARISTIC"/>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TagType="TAG_TRAIT_ECONOMIC"/>
+		<Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_KYIVAN_RUS" TagType="TAG_TRAIT_CULTURAL"/>
+		<Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_KYIVAN_RUS" TagType="TAG_TRAIT_ECONOMIC"/>
+		<Row CivilizationDomain="ModernAgeCivilizations" CivilizationType="CIVILIZATION_UKRAINE" TagType="TAG_TRAIT_ECONOMIC"/>
+		<Row CivilizationDomain="ModernAgeCivilizations" CivilizationType="CIVILIZATION_UKRAINE" TagType="TAG_TRAIT_MILITARISTIC"/>
+	</CivilizationTags>
+	<CivilizationUnlocks>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" AgeDomain="StandardAges" AgeType="AGE_EXPLORATION" Type="CIVILIZATION_KYIVAN_RUS" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_KYIVAN_RUS_NAME" Description="LOC_CIVILIZATION_KYIVAN_RUS_DESCRIPTION" Icon="CIVILIZATION_KYIVAN_RUS"/>
+		<Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_KYIVAN_RUS" AgeDomain="StandardAges" AgeType="AGE_MODERN" Type="CIVILIZATION_UKRAINE" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_UKRAINE_NAME" Description="LOC_CIVILIZATION_UKRAINE_DESCRIPTION" Icon="CIVILIZATION_UKRAINE"/>
+	</CivilizationUnlocks>
+	<LeaderCivilizationBias>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" LeaderDomain="StandardLeaders" LeaderType="LEADER_XERXES" Bias="1" ReasonType="LOC_UNLOCK_PLAY_AS_XERXES_PONTIC_SCYTHIA_TOOLTIP" ChoiceType="LOC_CREATE_GAME_STRATEGIC_CHOICE"/>
+		<Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_KYIVAN_RUS" LeaderDomain="StandardLeaders" LeaderType="LEADER_CATHERINE" Bias="1" ReasonType="LOC_UNLOCK_PLAY_AS_CATHERINE_KYIVAN_RUS_TOOLTIP" ChoiceType="LOC_CREATE_GAME_HISTORICAL_CHOICE"/>
+		<Row CivilizationDomain="ModernAgeCivilizations" CivilizationType="CIVILIZATION_UKRAINE" LeaderDomain="StandardLeaders" LeaderType="LEADER_BENJAMIN_FRANKLIN" Bias="1" ReasonType="LOC_UNLOCK_PLAY_AS_FRANKLIN_UKRAINE_TOOLTIP" ChoiceType="LOC_CREATE_GAME_STRATEGIC_CHOICE"/>
+	</LeaderCivilizationBias>
+	<OwnershipConditions>
+		<Row ItemType="CIVILIZATION_PONTIC_SCYTHIA" Action="LOC_LOCKED_INCLUDED_WITH_CONTENT"/>
+		<Row ItemType="CIVILIZATION_KYIVAN_RUS" Action="LOC_LOCKED_INCLUDED_WITH_CONTENT"/>
+		<Row ItemType="CIVILIZATION_UKRAINE" Action="LOC_LOCKED_INCLUDED_WITH_CONTENT"/>
+	</OwnershipConditions>
+</Database>

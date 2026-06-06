@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<TraitModifiers>
+		<!-- V0.1 intentionally keeps Kyivan Rus mechanically conservative until custom modifiers are log-tested. -->
+	</TraitModifiers>
+</Database>
