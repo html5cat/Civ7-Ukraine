@@ -35,6 +35,9 @@
 		</ActionGroup>
 		<ActionGroup id="ukraine-continuity-game-shared" scope="game" criteria="always">
 			<Actions>
+				<ImportFiles>
+					<Item>assets/civ_sym_ukraine_continuity.png</Item>
+				</ImportFiles>
 				<UpdateIcons>
 					<Item>data/icons/civilization-icons.xml</Item>
 				</UpdateIcons>
@@ -66,6 +69,9 @@
 		</ActionGroup>
 		<ActionGroup id="ukraine-continuity-shell" scope="shell" criteria="always">
 			<Actions>
+				<ImportFiles>
+					<Item>assets/civ_sym_ukraine_continuity.png</Item>
+				</ImportFiles>
 				<UpdateIcons>
 					<Item>data/icons/civilization-icons.xml</Item>
 				</UpdateIcons>

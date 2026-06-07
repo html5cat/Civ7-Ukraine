@@ -3,15 +3,15 @@
 	<IconDefinitions>
 		<Row>
 			<ID>CIVILIZATION_PONTIC_SCYTHIA</ID>
-			<Path>fs://game/civ_sym_unknown.png</Path>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
 		</Row>
 		<Row>
 			<ID>CIVILIZATION_KYIVAN_RUS</ID>
-			<Path>fs://game/civ_sym_unknown.png</Path>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
 		</Row>
 		<Row>
 			<ID>CIVILIZATION_UKRAINE</ID>
-			<Path>fs://game/civ_sym_unknown.png</Path>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
 		</Row>
 	</IconDefinitions>
 </Database>
