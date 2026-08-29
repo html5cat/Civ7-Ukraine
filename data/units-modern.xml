@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sich Riflemen (Sichovi Striltsi) — Ukraine unique infantry line.
+     Replaces Modern Line Infantry / Rifleman / Infantry Company.
+     Chosen over Cossacks because Russia already has Cossacks as a unique unit;
+     Sich Riflemen are a distinctly Ukrainian national formation (WWI era). -->
+<Database>
+	<Types>
+		<Row Type="UNIT_SICH_RIFLEMEN" Kind="KIND_UNIT"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_2" Kind="KIND_UNIT"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_3" Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_SICH_RIFLEMEN" Kind="KIND_ABILITY"/>
+	</Types>
+	<Units>
+		<Row UnitType="UNIT_SICH_RIFLEMEN" Name="LOC_UNIT_SICH_RIFLEMEN_NAME" Description="LOC_UNIT_SICH_RIFLEMEN_DESCRIPTION" Tier="1" Maintenance="3" BaseMoves="2" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" TraitType="TRAIT_UKRAINE"/>
+		<Row UnitType="UNIT_SICH_RIFLEMEN_2" Name="LOC_UNIT_SICH_RIFLEMEN_NAME" Description="LOC_UNIT_SICH_RIFLEMEN_2_DESCRIPTION" Tier="2" Maintenance="6" BaseMoves="2" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" TraitType="TRAIT_UKRAINE"/>
+		<Row UnitType="UNIT_SICH_RIFLEMEN_3" Name="LOC_UNIT_SICH_RIFLEMEN_NAME" Description="LOC_UNIT_SICH_RIFLEMEN_3_DESCRIPTION" Tier="3" Maintenance="9" BaseMoves="2" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" TraitType="TRAIT_UKRAINE"/>
+	</Units>
+	<Unit_Stats>
+		<!-- Matches Bharat Azad Hind Fauj / base Line Infantry line. -->
+		<Row UnitType="UNIT_SICH_RIFLEMEN" Combat="50"/>
+		<Row UnitType="UNIT_SICH_RIFLEMEN_2" Combat="55"/>
+		<Row UnitType="UNIT_SICH_RIFLEMEN_3" Combat="60"/>
+	</Unit_Stats>
+	<Unit_Costs>
+		<Row UnitType="UNIT_SICH_RIFLEMEN" YieldType="YIELD_PRODUCTION" Cost="290"/>
+		<Row UnitType="UNIT_SICH_RIFLEMEN_2" YieldType="YIELD_PRODUCTION" Cost="340"/>
+		<Row UnitType="UNIT_SICH_RIFLEMEN_3" YieldType="YIELD_PRODUCTION" Cost="400"/>
+	</Unit_Costs>
+	<UnitUpgrades>
+		<Row Unit="UNIT_SICH_RIFLEMEN" UpgradeUnit="UNIT_SICH_RIFLEMEN_2"/>
+		<Row Unit="UNIT_SICH_RIFLEMEN_2" UpgradeUnit="UNIT_SICH_RIFLEMEN_3"/>
+	</UnitUpgrades>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_SICH_RIFLEMEN" ReplacesUnitType="UNIT_LINE_INFANTRY"/>
+		<Row CivUniqueUnitType="UNIT_SICH_RIFLEMEN_2" ReplacesUnitType="UNIT_RIFLEMAN"/>
+		<Row CivUniqueUnitType="UNIT_SICH_RIFLEMEN_3" ReplacesUnitType="UNIT_INFANTRY_COMPANY"/>
+	</UnitReplaces>
+	<Tags>
+		<Row Tag="UNIT_CLASS_SICH_RIFLEMEN" Category="UNIT_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="UNIT_SICH_RIFLEMEN" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_SICH_RIFLEMEN" Tag="UNIT_CLASS_MELEE"/>
+		<Row Type="UNIT_SICH_RIFLEMEN" Tag="UNIT_CLASS_INFANTRY"/>
+		<Row Type="UNIT_SICH_RIFLEMEN" Tag="UNIT_CLASS_SICH_RIFLEMEN"/>
+		<Row Type="UNIT_SICH_RIFLEMEN" Tag="UNIT_CLASS_UNIQUE"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_2" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_2" Tag="UNIT_CLASS_MELEE"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_2" Tag="UNIT_CLASS_INFANTRY"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_2" Tag="UNIT_CLASS_SICH_RIFLEMEN"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_2" Tag="UNIT_CLASS_UNIQUE"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_3" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_3" Tag="UNIT_CLASS_MELEE"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_3" Tag="UNIT_CLASS_INFANTRY"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_3" Tag="UNIT_CLASS_ELITE_INFANTRY"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_3" Tag="UNIT_CLASS_SICH_RIFLEMEN"/>
+		<Row Type="UNIT_SICH_RIFLEMEN_3" Tag="UNIT_CLASS_UNIQUE"/>
+	</TypeTags>
+	<UnitClass_Abilities>
+		<Row UnitAbilityType="ABILITY_SICH_RIFLEMEN" UnitClassType="UNIT_CLASS_SICH_RIFLEMEN"/>
+	</UnitClass_Abilities>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_SICH_RIFLEMEN" Name="LOC_UNIT_SICH_RIFLEMEN_NAME" Description="LOC_ABILITY_SICH_RIFLEMEN_COMBAT_PREVIEW"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row UnitAbilityType="ABILITY_SICH_RIFLEMEN" ModifierId="SICH_RIFLEMEN_MOD_FRIENDLY_TERRITORY_COMBAT"/>
+	</UnitAbilityModifiers>
+	<Unit_Advisories>
+		<Row UnitType="UNIT_SICH_RIFLEMEN" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+		<Row UnitType="UNIT_SICH_RIFLEMEN_2" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+		<Row UnitType="UNIT_SICH_RIFLEMEN_3" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+	</Unit_Advisories>
+</Database>

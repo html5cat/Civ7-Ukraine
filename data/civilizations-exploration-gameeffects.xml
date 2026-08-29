@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Route from the Varangians:
+     1. +2 Gold in river-adjacent settlements (Dnipro trade route)
+     2. +1 Culture in river-adjacent settlements (urban law / Orthodoxy)
+     3. +1 Influence in the capital (diplomacy of the Rus' princes)
+
+     River adjacency requirement shape from Periplus / official modifier docs. -->
+<GameEffects xmlns="GameEffects">
+	<Modifier id="KYIVAN_RUS_MOD_RIVER_GOLD" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_YIELD">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLOT_ADJACENT_TO_RIVER">
+				<Argument name="Navigable">true</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="YieldType">YIELD_GOLD</Argument>
+		<Argument name="Amount">2</Argument>
+		<Argument name="Tooltip">LOC_TRAIT_KYIVAN_RUS_ABILITY_NAME</Argument>
+	</Modifier>
+	<Modifier id="KYIVAN_RUS_MOD_RIVER_CULTURE" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_YIELD">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLOT_ADJACENT_TO_RIVER">
+				<Argument name="Navigable">true</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="YieldType">YIELD_CULTURE</Argument>
+		<Argument name="Amount">1</Argument>
+		<Argument name="Tooltip">LOC_TRAIT_KYIVAN_RUS_ABILITY_NAME</Argument>
+	</Modifier>
+	<Modifier id="KYIVAN_RUS_MOD_CAPITAL_INFLUENCE" collection="COLLECTION_PLAYER_CAPITAL_CITY" effect="EFFECT_CITY_ADJUST_YIELD">
+		<Argument name="YieldType">YIELD_DIPLOMACY</Argument>
+		<Argument name="Amount">1</Argument>
+		<Argument name="Tooltip">LOC_TRAIT_KYIVAN_RUS_ABILITY_NAME</Argument>
+	</Modifier>
+</GameEffects>

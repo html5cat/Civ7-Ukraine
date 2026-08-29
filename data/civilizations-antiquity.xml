@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Pontic Scythia ability wiring: TraitModifiers → GameEffects. -->
 <Database>
 	<TraitModifiers>
-		<!-- V0.1 intentionally keeps Scythia mechanically conservative until custom modifiers are log-tested. -->
+		<Row TraitType="TRAIT_PONTIC_SCYTHIA_ABILITY" ModifierId="PONTIC_SCYTHIA_MOD_CAVALRY_MOVEMENT"/>
+		<Row TraitType="TRAIT_PONTIC_SCYTHIA_ABILITY" ModifierId="PONTIC_SCYTHIA_MOD_CAVALRY_COMBAT"/>
+		<Row TraitType="TRAIT_PONTIC_SCYTHIA_ABILITY" ModifierId="PONTIC_SCYTHIA_MOD_HORSE_GOLD"/>
 	</TraitModifiers>
 </Database>

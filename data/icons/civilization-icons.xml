@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Icon definitions. Paths use fs://game/<file>.png after ImportFiles. -->
 <Database>
 	<IconDefinitions>
 		<Row>
@@ -11,6 +12,39 @@
 		</Row>
 		<Row>
 			<ID>CIVILIZATION_UKRAINE</ID>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
+		</Row>
+		<!-- Unit flags reuse the civ symbol until dedicated art ships. -->
+		<Row>
+			<ID>UNIT_SAKA_HORSE_ARCHER</ID>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
+		</Row>
+		<Row>
+			<ID>UNIT_SAKA_HORSE_ARCHER_2</ID>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
+		</Row>
+		<Row>
+			<ID>UNIT_DRUZHINA</ID>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
+		</Row>
+		<Row>
+			<ID>UNIT_DRUZHINA_2</ID>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
+		</Row>
+		<Row>
+			<ID>UNIT_DRUZHINA_3</ID>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
+		</Row>
+		<Row>
+			<ID>UNIT_SICH_RIFLEMEN</ID>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
+		</Row>
+		<Row>
+			<ID>UNIT_SICH_RIFLEMEN_2</ID>
+			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
+		</Row>
+		<Row>
+			<ID>UNIT_SICH_RIFLEMEN_3</ID>
 			<Path>fs://game/civ_sym_ukraine_continuity.png</Path>
 		</Row>
 	</IconDefinitions>

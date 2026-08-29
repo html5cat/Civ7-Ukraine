@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Kyivan Rus' ability wiring. -->
 <Database>
 	<TraitModifiers>
-		<!-- V0.1 intentionally keeps Kyivan Rus mechanically conservative until custom modifiers are log-tested. -->
+		<Row TraitType="TRAIT_KYIVAN_RUS_ABILITY" ModifierId="KYIVAN_RUS_MOD_RIVER_GOLD"/>
+		<Row TraitType="TRAIT_KYIVAN_RUS_ABILITY" ModifierId="KYIVAN_RUS_MOD_RIVER_CULTURE"/>
+		<Row TraitType="TRAIT_KYIVAN_RUS_ABILITY" ModifierId="KYIVAN_RUS_MOD_CAPITAL_INFLUENCE"/>
 	</TraitModifiers>
 </Database>

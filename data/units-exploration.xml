@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Druzhina — Kyivan Rus' elite mounted retinue.
+     Replaces Exploration Courser / Knight / Lancer cavalry line. -->
+<Database>
+	<Types>
+		<Row Type="UNIT_DRUZHINA" Kind="KIND_UNIT"/>
+		<Row Type="UNIT_DRUZHINA_2" Kind="KIND_UNIT"/>
+		<Row Type="UNIT_DRUZHINA_3" Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_DRUZHINA" Kind="KIND_ABILITY"/>
+	</Types>
+	<Units>
+		<Row UnitType="UNIT_DRUZHINA" Name="LOC_UNIT_DRUZHINA_NAME" Description="LOC_UNIT_DRUZHINA_DESCRIPTION" Tier="1" Maintenance="2" BaseMoves="3" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" UnitMovementClass="UNIT_MOVEMENT_CLASS_MOUNTED" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" TraitType="TRAIT_KYIVAN_RUS"/>
+		<Row UnitType="UNIT_DRUZHINA_2" Name="LOC_UNIT_DRUZHINA_NAME" Description="LOC_UNIT_DRUZHINA_2_DESCRIPTION" Tier="2" Maintenance="3" BaseMoves="3" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" UnitMovementClass="UNIT_MOVEMENT_CLASS_MOUNTED" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" TraitType="TRAIT_KYIVAN_RUS"/>
+		<Row UnitType="UNIT_DRUZHINA_3" Name="LOC_UNIT_DRUZHINA_NAME" Description="LOC_UNIT_DRUZHINA_3_DESCRIPTION" Tier="3" Maintenance="4" BaseMoves="3" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" UnitMovementClass="UNIT_MOVEMENT_CLASS_MOUNTED" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" TraitType="TRAIT_KYIVAN_RUS"/>
+	</Units>
+	<Unit_Stats>
+		<!-- Base Courser 40 / Knight 45 / Lancer 50; +3 Combat. -->
+		<Row UnitType="UNIT_DRUZHINA" Combat="43"/>
+		<Row UnitType="UNIT_DRUZHINA_2" Combat="48"/>
+		<Row UnitType="UNIT_DRUZHINA_3" Combat="53"/>
+	</Unit_Stats>
+	<Unit_Costs>
+		<Row UnitType="UNIT_DRUZHINA" YieldType="YIELD_PRODUCTION" Cost="150"/>
+		<Row UnitType="UNIT_DRUZHINA_2" YieldType="YIELD_PRODUCTION" Cost="190"/>
+		<Row UnitType="UNIT_DRUZHINA_3" YieldType="YIELD_PRODUCTION" Cost="240"/>
+	</Unit_Costs>
+	<UnitUpgrades>
+		<Row Unit="UNIT_DRUZHINA" UpgradeUnit="UNIT_DRUZHINA_2"/>
+		<Row Unit="UNIT_DRUZHINA_2" UpgradeUnit="UNIT_DRUZHINA_3"/>
+	</UnitUpgrades>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_DRUZHINA" ReplacesUnitType="UNIT_COURSER"/>
+		<Row CivUniqueUnitType="UNIT_DRUZHINA_2" ReplacesUnitType="UNIT_KNIGHT"/>
+		<Row CivUniqueUnitType="UNIT_DRUZHINA_3" ReplacesUnitType="UNIT_LANCER"/>
+	</UnitReplaces>
+	<Tags>
+		<Row Tag="UNIT_CLASS_DRUZHINA" Category="UNIT_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="UNIT_DRUZHINA" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_DRUZHINA" Tag="UNIT_CLASS_CAVALRY"/>
+		<Row Type="UNIT_DRUZHINA" Tag="UNIT_CLASS_MOUNTED"/>
+		<Row Type="UNIT_DRUZHINA" Tag="UNIT_CLASS_DRUZHINA"/>
+		<Row Type="UNIT_DRUZHINA" Tag="UNIT_CLASS_UNIQUE"/>
+		<Row Type="UNIT_DRUZHINA_2" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_DRUZHINA_2" Tag="UNIT_CLASS_CAVALRY"/>
+		<Row Type="UNIT_DRUZHINA_2" Tag="UNIT_CLASS_MOUNTED"/>
+		<Row Type="UNIT_DRUZHINA_2" Tag="UNIT_CLASS_DRUZHINA"/>
+		<Row Type="UNIT_DRUZHINA_2" Tag="UNIT_CLASS_UNIQUE"/>
+		<Row Type="UNIT_DRUZHINA_3" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_DRUZHINA_3" Tag="UNIT_CLASS_CAVALRY"/>
+		<Row Type="UNIT_DRUZHINA_3" Tag="UNIT_CLASS_MOUNTED"/>
+		<Row Type="UNIT_DRUZHINA_3" Tag="UNIT_CLASS_ELITE_CAVALRY"/>
+		<Row Type="UNIT_DRUZHINA_3" Tag="UNIT_CLASS_DRUZHINA"/>
+		<Row Type="UNIT_DRUZHINA_3" Tag="UNIT_CLASS_UNIQUE"/>
+	</TypeTags>
+	<UnitClass_Abilities>
+		<Row UnitAbilityType="ABILITY_DRUZHINA" UnitClassType="UNIT_CLASS_DRUZHINA"/>
+	</UnitClass_Abilities>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_DRUZHINA" Name="LOC_UNIT_DRUZHINA_NAME" Description="LOC_ABILITY_DRUZHINA_COMBAT_PREVIEW"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row UnitAbilityType="ABILITY_DRUZHINA" ModifierId="DRUZHINA_MOD_FRIENDLY_TERRITORY_COMBAT"/>
+	</UnitAbilityModifiers>
+	<Unit_Advisories>
+		<Row UnitType="UNIT_DRUZHINA" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+		<Row UnitType="UNIT_DRUZHINA_2" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+		<Row UnitType="UNIT_DRUZHINA_3" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+	</Unit_Advisories>
+</Database>
