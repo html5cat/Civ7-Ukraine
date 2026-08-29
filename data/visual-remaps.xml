@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Visual remaps are NOT a gameplay Database table.
+     Must load via <UpdateVisualRemaps>, not UpdateDatabase.
+     Direction: From = donor (existing 3D model), To = our unit. -->
+<Database>
+	<VisualRemaps>
+		<!-- Pontic Scythia: Saka Horse Archer -->
+		<Row>
+			<ID>REMAP_SAKA_HORSE_ARCHER</ID>
+			<DisplayName>LOC_UNIT_SAKA_HORSE_ARCHER_NAME</DisplayName>
+			<Kind>UNIT</Kind>
+			<From>UNIT_CHARIOT</From>
+			<To>UNIT_SAKA_HORSE_ARCHER</To>
+		</Row>
+		<Row>
+			<ID>REMAP_SAKA_HORSE_ARCHER_2</ID>
+			<DisplayName>LOC_UNIT_SAKA_HORSE_ARCHER_NAME</DisplayName>
+			<Kind>UNIT</Kind>
+			<From>UNIT_HORSEMAN</From>
+			<To>UNIT_SAKA_HORSE_ARCHER_2</To>
+		</Row>
+		<!-- Kyivan Rus': Druzhina -->
+		<Row>
+			<ID>REMAP_DRUZHINA</ID>
+			<DisplayName>LOC_UNIT_DRUZHINA_NAME</DisplayName>
+			<Kind>UNIT</Kind>
+			<From>UNIT_COURSER</From>
+			<To>UNIT_DRUZHINA</To>
+		</Row>
+		<Row>
+			<ID>REMAP_DRUZHINA_2</ID>
+			<DisplayName>LOC_UNIT_DRUZHINA_NAME</DisplayName>
+			<Kind>UNIT</Kind>
+			<From>UNIT_KNIGHT</From>
+			<To>UNIT_DRUZHINA_2</To>
+		</Row>
+		<Row>
+			<ID>REMAP_DRUZHINA_3</ID>
+			<DisplayName>LOC_UNIT_DRUZHINA_NAME</DisplayName>
+			<Kind>UNIT</Kind>
+			<From>UNIT_LANCER</From>
+			<To>UNIT_DRUZHINA_3</To>
+		</Row>
+		<!-- Ukraine: Sich Riflemen -->
+		<Row>
+			<ID>REMAP_SICH_RIFLEMEN</ID>
+			<DisplayName>LOC_UNIT_SICH_RIFLEMEN_NAME</DisplayName>
+			<Kind>UNIT</Kind>
+			<From>UNIT_LINE_INFANTRY</From>
+			<To>UNIT_SICH_RIFLEMEN</To>
+		</Row>
+		<Row>
+			<ID>REMAP_SICH_RIFLEMEN_2</ID>
+			<DisplayName>LOC_UNIT_SICH_RIFLEMEN_NAME</DisplayName>
+			<Kind>UNIT</Kind>
+			<From>UNIT_RIFLEMAN</From>
+			<To>UNIT_SICH_RIFLEMEN_2</To>
+		</Row>
+		<Row>
+			<ID>REMAP_SICH_RIFLEMEN_3</ID>
+			<DisplayName>LOC_UNIT_SICH_RIFLEMEN_NAME</DisplayName>
+			<Kind>UNIT</Kind>
+			<From>UNIT_INFANTRY_COMPANY</From>
+			<To>UNIT_SICH_RIFLEMEN_3</To>
+		</Row>
+	</VisualRemaps>
+</Database>

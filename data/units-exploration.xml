@@ -68,9 +68,4 @@
 		<Row UnitType="UNIT_DRUZHINA_2" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
 		<Row UnitType="UNIT_DRUZHINA_3" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
 	</Unit_Advisories>
-	<VisualRemaps>
-		<Row ID="REMAP_DRUZHINA" DisplayName="LOC_UNIT_DRUZHINA_NAME" Kind="UNIT" From="UNIT_DRUZHINA" To="UNIT_COURSER"/>
-		<Row ID="REMAP_DRUZHINA_2" DisplayName="LOC_UNIT_DRUZHINA_NAME" Kind="UNIT" From="UNIT_DRUZHINA_2" To="UNIT_KNIGHT"/>
-		<Row ID="REMAP_DRUZHINA_3" DisplayName="LOC_UNIT_DRUZHINA_NAME" Kind="UNIT" From="UNIT_DRUZHINA_3" To="UNIT_LANCER"/>
-	</VisualRemaps>
 </Database>

@@ -3,7 +3,7 @@
      Structure mirrors working Workshop civ mods (Nepal DLC / Bharat patterns):
      plain-text Properties, age References, always-loaded shared civ rows,
      age-gated units/abilities, shell config for setup screen. -->
-<Mod id="ukraine-historical-continuity" version="2" xmlns="ModInfo">
+<Mod id="ukraine-historical-continuity" version="3" xmlns="ModInfo">
 	<Properties>
 		<Name>Ukraine: Historical Continuity</Name>
 		<Description>Historically grounded all-age path: Pontic Scythia (Antiquity), Kyivan Rus' (Exploration), and Ukraine (Modern), with unique abilities and units.</Description>
@@ -36,7 +36,9 @@
 		</Criteria>
 	</ActionCriteria>
 	<ActionGroups>
-		<!-- Always-on gameplay: types, civs, text, icons, shared wiring. -->
+		<!-- Always-on gameplay: types, civs, text, icons, shared wiring.
+		     Icons + visual remaps must be in always groups (not age-gated)
+		     or unit flags/models fail to register. -->
 		<ActionGroup id="ukraine-continuity-game-always" scope="game" criteria="always">
 			<Actions>
 				<UpdateDatabase>
@@ -50,6 +52,9 @@
 				<UpdateIcons>
 					<Item>data/icons/civilization-icons.xml</Item>
 				</UpdateIcons>
+				<UpdateVisualRemaps>
+					<Item>data/visual-remaps.xml</Item>
+				</UpdateVisualRemaps>
 				<ImportFiles>
 					<Item>assets/civ_sym_ukraine_continuity.png</Item>
 				</ImportFiles>
@@ -92,7 +97,7 @@
 			</Actions>
 		</ActionGroup>
 
-		<!-- Shell / setup screen. -->
+		<!-- Shell / setup screen. Icons + remaps also here so setup/flags resolve. -->
 		<ActionGroup id="ukraine-continuity-shell" scope="shell" criteria="always">
 			<Actions>
 				<ImportFiles>
@@ -101,6 +106,9 @@
 				<UpdateIcons>
 					<Item>data/icons/civilization-icons.xml</Item>
 				</UpdateIcons>
+				<UpdateVisualRemaps>
+					<Item>data/visual-remaps.xml</Item>
+				</UpdateVisualRemaps>
 				<UpdateDatabase>
 					<Item>config/config.xml</Item>
 				</UpdateDatabase>

@@ -62,11 +62,16 @@ Logs/database.log
 
 You should see the three civilizations in the matching age setup menus without database errors.
 
-## Validate (optional)
+## Validate (offline)
+
+Civilization VII is required for a full in-game load test. Offline structural checks:
 
 ```bash
 python3 scripts/validate_mod.py
+python3 scripts/test_mod_offline.py
 ```
+
+These catch crash-class issues (bad VisualRemaps loading, reversed donor direction, missing files, dangling modifiers, LOC gaps). They cannot replace checking `Modding.log` / `Database.log` after enabling the mod in-game.
 
 ## Leader pairings (setup highlights)
 
