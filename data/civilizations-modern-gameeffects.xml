@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Breadbasket and Bastion:
+     1. +2 Food in every settlement (chernozem agriculture)
+     2. +1 Gold in every settlement (grain export wealth)
+     3. +3 War Support in wars you did not start (defensive sovereignty)
+
+     War Support shape verified against Bharat / Trung memento patterns. -->
+<GameEffects xmlns="GameEffects">
+	<Modifier id="UKRAINE_MOD_SETTLEMENT_FOOD" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_YIELD">
+		<Argument name="YieldType">YIELD_FOOD</Argument>
+		<Argument name="Amount">2</Argument>
+		<Argument name="Tooltip">LOC_TRAIT_UKRAINE_ABILITY_NAME</Argument>
+	</Modifier>
+	<Modifier id="UKRAINE_MOD_SETTLEMENT_GOLD" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_YIELD">
+		<Argument name="YieldType">YIELD_GOLD</Argument>
+		<Argument name="Amount">1</Argument>
+		<Argument name="Tooltip">LOC_TRAIT_UKRAINE_ABILITY_NAME</Argument>
+	</Modifier>
+	<Modifier id="UKRAINE_MOD_WAR_SUPPORT_DEFENSE" collection="COLLECTION_OWNER" effect="EFFECT_ADJUST_WAR_SUPPORT_BONUS">
+		<Argument name="Amount">3</Argument>
+		<Argument name="IsAggressor">false</Argument>
+	</Modifier>
+</GameEffects>

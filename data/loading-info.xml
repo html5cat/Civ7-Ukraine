@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LoadingInfo_Civilizations>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CivilizationText="LOC_LOADING_CIV_INTRO_TEXT_PONTIC_SCYTHIA"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CivilizationText="LOC_LOADING_CIV_INTRO_TEXT_KYIVAN_RUS"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" CivilizationText="LOC_LOADING_CIV_INTRO_TEXT_UKRAINE"/>
+	</LoadingInfo_Civilizations>
+</Database>

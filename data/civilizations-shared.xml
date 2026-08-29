@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Shared civilization registration for all three ages.
+     Pattern grounded against Nepal DLC / Bharat Modern civ add-ons:
+     Types + Traits self-registered, age traits, attribute trees with TOT rows,
+     city names, start biases, syncretism unlocks, vis-art cultures. -->
 <Database>
+	<Kinds>
+		<InsertOrIgnore KIND="KIND_TRAIT"/>
+	</Kinds>
 	<Types>
 		<Row Type="CIVILIZATION_PONTIC_SCYTHIA" Kind="KIND_CIVILIZATION"/>
 		<Row Type="CIVILIZATION_KYIVAN_RUS" Kind="KIND_CIVILIZATION"/>
@@ -12,7 +19,7 @@
 		<Row Type="TRAIT_UKRAINE_ABILITY" Kind="KIND_TRAIT"/>
 	</Types>
 	<Civilizations>
-		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" Name="LOC_CIVILIZATION_PONTIC_SCYTHIA_NAME" FullName="LOC_CIVILIZATION_PONTIC_SCYTHIA_FULLNAME" Description="LOC_CIVILIZATION_PONTIC_SCYTHIA_DESCRIPTION" Adjective="LOC_CIVILIZATION_PONTIC_SCYTHIA_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" ApexAge="AGE_ANTIQUITY" CapitalName="LOC_CITY_NAME_PONTIC_SCYTHIA_1" RandomCityNameDepth="12"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" Name="LOC_CIVILIZATION_PONTIC_SCYTHIA_NAME" FullName="LOC_CIVILIZATION_PONTIC_SCYTHIA_FULLNAME" Description="LOC_CIVILIZATION_PONTIC_SCYTHIA_DESCRIPTION" Adjective="LOC_CIVILIZATION_PONTIC_SCYTHIA_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" ApexAge="AGE_ANTIQUITY" CapitalName="LOC_CITY_NAME_PONTIC_SCYTHIA_1" RandomCityNameDepth="10"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" Name="LOC_CIVILIZATION_KYIVAN_RUS_NAME" FullName="LOC_CIVILIZATION_KYIVAN_RUS_FULLNAME" Description="LOC_CIVILIZATION_KYIVAN_RUS_DESCRIPTION" Adjective="LOC_CIVILIZATION_KYIVAN_RUS_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" ApexAge="AGE_EXPLORATION" CapitalName="LOC_CITY_NAME_KYIVAN_RUS_1" RandomCityNameDepth="12"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" Name="LOC_CIVILIZATION_UKRAINE_NAME" FullName="LOC_CIVILIZATION_UKRAINE_FULLNAME" Description="LOC_CIVILIZATION_UKRAINE_DESCRIPTION" Adjective="LOC_CIVILIZATION_UKRAINE_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" ApexAge="AGE_MODERN" CapitalName="LOC_CITY_NAME_UKRAINE_1" RandomCityNameDepth="16"/>
 	</Civilizations>
@@ -25,34 +32,63 @@
 		<Row TraitType="TRAIT_UKRAINE_ABILITY" Name="LOC_TRAIT_UKRAINE_ABILITY_NAME" Description="LOC_TRAIT_UKRAINE_ABILITY_DESCRIPTION" InternalOnly="true"/>
 	</Traits>
 	<CivilizationTraits>
+		<!-- Pontic Scythia: militaristic + economic (steppe cavalry + trade). -->
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TraitType="TRAIT_ANTIQUITY_CIV"/>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TraitType="TRAIT_PONTIC_SCYTHIA"/>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TraitType="TRAIT_PONTIC_SCYTHIA_ABILITY"/>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TraitType="TRAIT_ATTRIBUTE_MILITARISTIC"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TraitType="TRAIT_ATTRIBUTE_MILITARISTIC_TOT_AQ"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TraitType="TRAIT_ATTRIBUTE_MILITARISTIC_TOT_EX"/>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TraitType="TRAIT_ATTRIBUTE_ECONOMIC"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TraitType="TRAIT_ATTRIBUTE_ECONOMIC_TOT_AQ"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TraitType="TRAIT_ATTRIBUTE_ECONOMIC_TOT_EX"/>
+		<!-- Kyivan Rus': cultural + economic (river trade, law, Orthodoxy). -->
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" TraitType="TRAIT_EXPLORATION_CIV"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" TraitType="TRAIT_KYIVAN_RUS"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" TraitType="TRAIT_KYIVAN_RUS_ABILITY"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" TraitType="TRAIT_ATTRIBUTE_CULTURAL"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" TraitType="TRAIT_ATTRIBUTE_CULTURAL_TOT_AQ"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" TraitType="TRAIT_ATTRIBUTE_CULTURAL_TOT_EX"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" TraitType="TRAIT_ATTRIBUTE_ECONOMIC"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" TraitType="TRAIT_ATTRIBUTE_ECONOMIC_TOT_AQ"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" TraitType="TRAIT_ATTRIBUTE_ECONOMIC_TOT_EX"/>
+		<!-- Ukraine: economic + militaristic (agriculture + defensive sovereignty). -->
 		<Row CivilizationType="CIVILIZATION_UKRAINE" TraitType="TRAIT_MODERN_CIV"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" TraitType="TRAIT_UKRAINE"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" TraitType="TRAIT_UKRAINE_ABILITY"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" TraitType="TRAIT_ATTRIBUTE_ECONOMIC"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" TraitType="TRAIT_ATTRIBUTE_ECONOMIC_TOT_AQ"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" TraitType="TRAIT_ATTRIBUTE_ECONOMIC_TOT_EX"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" TraitType="TRAIT_ATTRIBUTE_MILITARISTIC"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" TraitType="TRAIT_ATTRIBUTE_MILITARISTIC_TOT_AQ"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" TraitType="TRAIT_ATTRIBUTE_MILITARISTIC_TOT_EX"/>
 	</CivilizationTraits>
 	<CityNames>
+		<!-- Pontic Scythia — archaeological / classical sites of the Pontic steppe. -->
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CityName="LOC_CITY_NAME_PONTIC_SCYTHIA_1"/>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CityName="LOC_CITY_NAME_PONTIC_SCYTHIA_2"/>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CityName="LOC_CITY_NAME_PONTIC_SCYTHIA_3"/>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CityName="LOC_CITY_NAME_PONTIC_SCYTHIA_4"/>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CityName="LOC_CITY_NAME_PONTIC_SCYTHIA_5"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CityName="LOC_CITY_NAME_PONTIC_SCYTHIA_6"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CityName="LOC_CITY_NAME_PONTIC_SCYTHIA_7"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CityName="LOC_CITY_NAME_PONTIC_SCYTHIA_8"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CityName="LOC_CITY_NAME_PONTIC_SCYTHIA_9"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" CityName="LOC_CITY_NAME_PONTIC_SCYTHIA_10"/>
+		<!-- Kyivan Rus' — principal centers of the medieval polity. -->
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_1"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_2"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_3"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_4"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_5"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_6"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_7"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_8"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_9"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_10"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_11"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" CityName="LOC_CITY_NAME_KYIVAN_RUS_12"/>
+		<!-- Ukraine — modern cities. -->
 		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_1"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_2"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_3"/>
@@ -63,22 +99,49 @@
 		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_8"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_9"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_10"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_11"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_12"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_13"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_14"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_15"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" CityName="LOC_CITY_NAME_UKRAINE_16"/>
 	</CityNames>
 	<StartBiasResources>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" ResourceType="RESOURCE_HORSES" Score="15"/>
-		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" ResourceType="RESOURCE_FURS" Score="5"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" ResourceType="RESOURCE_FURS" Score="8"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" ResourceType="RESOURCE_COTTON" Score="8"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" ResourceType="RESOURCE_COAL" Score="5"/>
 		<Row CivilizationType="CIVILIZATION_UKRAINE" ResourceType="RESOURCE_IRON" Score="5"/>
 	</StartBiasResources>
+	<StartBiasTerrains>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" TerrainType="TERRAIN_FLAT" Score="12"/>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" TerrainType="TERRAIN_FLAT" Score="6"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" TerrainType="TERRAIN_FLAT" Score="10"/>
+	</StartBiasTerrains>
+	<StartBiasBiomes>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" BiomeType="BIOME_PLAINS" Score="10"/>
+		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" BiomeType="BIOME_GRASSLAND" Score="8"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" BiomeType="BIOME_GRASSLAND" Score="10"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" BiomeType="BIOME_PLAINS" Score="8"/>
+	</StartBiasBiomes>
+	<StartBiasRivers>
+		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" Score="15"/>
+		<Row CivilizationType="CIVILIZATION_UKRAINE" Score="6"/>
+	</StartBiasRivers>
 	<CivilizationSyncretismUnlocks>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" UnlockCivilizationType="CIVILIZATION_KYIVAN_RUS"/>
 		<Row CivilizationType="CIVILIZATION_KYIVAN_RUS" UnlockCivilizationType="CIVILIZATION_UKRAINE"/>
 	</CivilizationSyncretismUnlocks>
 	<LeaderSyncretismUnlocks>
 		<Row LeaderType="LEADER_XERXES" UnlockCivilizationType="CIVILIZATION_PONTIC_SCYTHIA"/>
-		<Row LeaderType="LEADER_CATHERINE" UnlockCivilizationType="CIVILIZATION_KYIVAN_RUS"/>
-		<Row LeaderType="LEADER_BENJAMIN_FRANKLIN" UnlockCivilizationType="CIVILIZATION_UKRAINE"/>
+		<Row LeaderType="LEADER_CHARLEMAGNE" UnlockCivilizationType="CIVILIZATION_KYIVAN_RUS"/>
+		<Row LeaderType="LEADER_LAFAYETTE" UnlockCivilizationType="CIVILIZATION_UKRAINE"/>
 	</LeaderSyncretismUnlocks>
+	<LeaderCivPriorities>
+		<Row Leader="LEADER_XERXES" Civilization="CIVILIZATION_PONTIC_SCYTHIA" Priority="3"/>
+		<Row Leader="LEADER_CHARLEMAGNE" Civilization="CIVILIZATION_KYIVAN_RUS" Priority="3"/>
+		<Row Leader="LEADER_LAFAYETTE" Civilization="CIVILIZATION_UKRAINE" Priority="3"/>
+	</LeaderCivPriorities>
 	<VisArt_CivilizationBuildingCultures>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" BuildingCulture="BUILDING_CULTURE_EEU_ANT"/>
 		<Row CivilizationType="CIVILIZATION_PONTIC_SCYTHIA" BuildingCulture="ANT_STONE"/>

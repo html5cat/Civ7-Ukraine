@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Saka Horse Archer — Pontic Scythia unique cavalry line.
+     Replaces Antiquity Chariot (T2) and Horseman (T3). Stats from
+     well-of-souls / IGN unit tables + small unique bump. Pattern mirrors
+     Bharat Azad Hind Fauj / Tonga Kalia ability wiring. -->
+<Database>
+	<Types>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER" Kind="KIND_UNIT"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER_2" Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_SAKA_HORSE_ARCHER" Kind="KIND_ABILITY"/>
+	</Types>
+	<Units>
+		<Row UnitType="UNIT_SAKA_HORSE_ARCHER" Name="LOC_UNIT_SAKA_HORSE_ARCHER_NAME" Description="LOC_UNIT_SAKA_HORSE_ARCHER_DESCRIPTION" Tier="2" Maintenance="1" BaseMoves="4" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" UnitMovementClass="UNIT_MOVEMENT_CLASS_MOUNTED" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" TraitType="TRAIT_PONTIC_SCYTHIA"/>
+		<Row UnitType="UNIT_SAKA_HORSE_ARCHER_2" Name="LOC_UNIT_SAKA_HORSE_ARCHER_NAME" Description="LOC_UNIT_SAKA_HORSE_ARCHER_2_DESCRIPTION" Tier="3" Maintenance="2" BaseMoves="4" BaseSightRange="2" ZoneOfControl="true" Domain="DOMAIN_LAND" UnitMovementClass="UNIT_MOVEMENT_CLASS_MOUNTED" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" TraitType="TRAIT_PONTIC_SCYTHIA"/>
+	</Units>
+	<Unit_Stats>
+		<!-- Base Chariot 30 / Horseman 35; +5 Combat for unique identity. -->
+		<Row UnitType="UNIT_SAKA_HORSE_ARCHER" Combat="35"/>
+		<Row UnitType="UNIT_SAKA_HORSE_ARCHER_2" Combat="40"/>
+	</Unit_Stats>
+	<Unit_Costs>
+		<Row UnitType="UNIT_SAKA_HORSE_ARCHER" YieldType="YIELD_PRODUCTION" Cost="70"/>
+		<Row UnitType="UNIT_SAKA_HORSE_ARCHER_2" YieldType="YIELD_PRODUCTION" Cost="110"/>
+	</Unit_Costs>
+	<UnitUpgrades>
+		<Row Unit="UNIT_SAKA_HORSE_ARCHER" UpgradeUnit="UNIT_SAKA_HORSE_ARCHER_2"/>
+	</UnitUpgrades>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_SAKA_HORSE_ARCHER" ReplacesUnitType="UNIT_CHARIOT"/>
+		<Row CivUniqueUnitType="UNIT_SAKA_HORSE_ARCHER_2" ReplacesUnitType="UNIT_HORSEMAN"/>
+	</UnitReplaces>
+	<Tags>
+		<Row Tag="UNIT_CLASS_SAKA_HORSE_ARCHER" Category="UNIT_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER" Tag="UNIT_CLASS_CAVALRY"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER" Tag="UNIT_CLASS_MOUNTED"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER" Tag="UNIT_CLASS_SAKA_HORSE_ARCHER"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER" Tag="UNIT_CLASS_UNIQUE"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER_2" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER_2" Tag="UNIT_CLASS_CAVALRY"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER_2" Tag="UNIT_CLASS_MOUNTED"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER_2" Tag="UNIT_CLASS_ELITE_CAVALRY"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER_2" Tag="UNIT_CLASS_SAKA_HORSE_ARCHER"/>
+		<Row Type="UNIT_SAKA_HORSE_ARCHER_2" Tag="UNIT_CLASS_UNIQUE"/>
+	</TypeTags>
+	<UnitClass_Abilities>
+		<Row UnitAbilityType="ABILITY_SAKA_HORSE_ARCHER" UnitClassType="UNIT_CLASS_SAKA_HORSE_ARCHER"/>
+	</UnitClass_Abilities>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_SAKA_HORSE_ARCHER" Name="LOC_UNIT_SAKA_HORSE_ARCHER_NAME" Description="LOC_ABILITY_SAKA_HORSE_ARCHER_COMBAT_PREVIEW"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row UnitAbilityType="ABILITY_SAKA_HORSE_ARCHER" ModifierId="SAKA_HORSE_ARCHER_MOD_OPEN_TERRAIN_COMBAT"/>
+	</UnitAbilityModifiers>
+	<Unit_Advisories>
+		<Row UnitType="UNIT_SAKA_HORSE_ARCHER" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+		<Row UnitType="UNIT_SAKA_HORSE_ARCHER_2" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+	</Unit_Advisories>
+	<VisualRemaps>
+		<Row ID="REMAP_SAKA_HORSE_ARCHER" DisplayName="LOC_UNIT_SAKA_HORSE_ARCHER_NAME" Kind="UNIT" From="UNIT_SAKA_HORSE_ARCHER" To="UNIT_CHARIOT"/>
+		<Row ID="REMAP_SAKA_HORSE_ARCHER_2" DisplayName="LOC_UNIT_SAKA_HORSE_ARCHER_NAME" Kind="UNIT" From="UNIT_SAKA_HORSE_ARCHER_2" To="UNIT_HORSEMAN"/>
+	</VisualRemaps>
+</Database>

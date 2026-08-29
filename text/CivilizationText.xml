@@ -1,43 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
 	<LocalizedText>
+		<!-- Pontic Scythia -->
 		<Row Tag="LOC_CIVILIZATION_PONTIC_SCYTHIA_NAME" Language="en_US"><Text>Pontic Scythia</Text></Row>
 		<Row Tag="LOC_CIVILIZATION_PONTIC_SCYTHIA_FULLNAME" Language="en_US"><Text>Scythians of the Pontic Steppe</Text></Row>
 		<Row Tag="LOC_CIVILIZATION_PONTIC_SCYTHIA_ADJECTIVE" Language="en_US"><Text>Scythian</Text></Row>
-		<Row Tag="LOC_CIVILIZATION_PONTIC_SCYTHIA_DESCRIPTION" Language="en_US"><Text>Nomadic Iranian-speaking peoples who dominated the Pontic-Caspian steppe, including much of present-day southern Ukraine, during the first millennium BCE.</Text></Row>
+		<Row Tag="LOC_CIVILIZATION_PONTIC_SCYTHIA_DESCRIPTION" Language="en_US"><Text>Nomadic Iranian-speaking peoples who dominated the Pontic-Caspian steppe, including much of present-day southern Ukraine, during the first millennium BCE. Famous for mounted warfare, kurgan burial culture, and Black Sea trade.</Text></Row>
 		<Row Tag="LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_NAME" Language="en_US"><Text>Riders of the Pontic Steppe</Text></Row>
-		<Row Tag="LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_DESCRIPTION" Language="en_US"><Text>Design target: cavalry mobility, horse-resource starts, and kurgan culture. V0.1 is a playable shell pending custom modifier testing.</Text></Row>
+		<Row Tag="LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_DESCRIPTION" Language="en_US"><Text>Cavalry units receive +1 [icon:YIELD_MOVEMENT] Movement and +3 Combat Strength. The Capital receives +2 [icon:YIELD_GOLD] Gold.</Text></Row>
+		<Row Tag="LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_COMBAT_PREVIEW" Language="en_US"><Text>+{1_Amount} Combat Strength from Riders of the Pontic Steppe</Text></Row>
 		<Row Tag="LOC_LOADING_CIV_INTRO_TEXT_PONTIC_SCYTHIA" Language="en_US"><Text>Across the open steppe north of the Black Sea, Scythian power moved with horse, bow, and trade.</Text></Row>
 
+		<!-- Kyivan Rus' -->
 		<Row Tag="LOC_CIVILIZATION_KYIVAN_RUS_NAME" Language="en_US"><Text>Kyivan Rus'</Text></Row>
 		<Row Tag="LOC_CIVILIZATION_KYIVAN_RUS_FULLNAME" Language="en_US"><Text>Kyivan Rus'</Text></Row>
 		<Row Tag="LOC_CIVILIZATION_KYIVAN_RUS_ADJECTIVE" Language="en_US"><Text>Rus'</Text></Row>
-		<Row Tag="LOC_CIVILIZATION_KYIVAN_RUS_DESCRIPTION" Language="en_US"><Text>A medieval polity centered on Kyiv, tied to river commerce, Orthodox Christianity, urban law, and diplomacy across Eastern Europe.</Text></Row>
+		<Row Tag="LOC_CIVILIZATION_KYIVAN_RUS_DESCRIPTION" Language="en_US"><Text>A medieval polity centered on Kyiv along the route from the Varangians to the Greeks. Known for river commerce, Orthodox Christianity after 988, princely law, and diplomacy across Eastern Europe.</Text></Row>
 		<Row Tag="LOC_TRAIT_KYIVAN_RUS_ABILITY_NAME" Language="en_US"><Text>Route from the Varangians</Text></Row>
-		<Row Tag="LOC_TRAIT_KYIVAN_RUS_ABILITY_DESCRIPTION" Language="en_US"><Text>Design target: river trade, culture from diplomacy, and defensive city networks. V0.1 is a playable shell pending custom modifier testing.</Text></Row>
+		<Row Tag="LOC_TRAIT_KYIVAN_RUS_ABILITY_DESCRIPTION" Language="en_US"><Text>Settlements adjacent to navigable rivers receive +2 [icon:YIELD_GOLD] Gold and +1 [icon:YIELD_CULTURE] Culture. The Capital receives +1 [icon:YIELD_DIPLOMACY] Influence.</Text></Row>
 		<Row Tag="LOC_LOADING_CIV_INTRO_TEXT_KYIVAN_RUS" Language="en_US"><Text>From Kyiv, river routes carried law, faith, trade, and power between the Baltic, Black Sea, and steppe.</Text></Row>
 
+		<!-- Ukraine -->
 		<Row Tag="LOC_CIVILIZATION_UKRAINE_NAME" Language="en_US"><Text>Ukraine</Text></Row>
 		<Row Tag="LOC_CIVILIZATION_UKRAINE_FULLNAME" Language="en_US"><Text>Ukraine</Text></Row>
 		<Row Tag="LOC_CIVILIZATION_UKRAINE_ADJECTIVE" Language="en_US"><Text>Ukrainian</Text></Row>
-		<Row Tag="LOC_CIVILIZATION_UKRAINE_DESCRIPTION" Language="en_US"><Text>A modern nation rooted in Black Sea and steppe histories, Kyivan urban traditions, Cossack self-government, agricultural wealth, civic resilience, and state sovereignty.</Text></Row>
+		<Row Tag="LOC_CIVILIZATION_UKRAINE_DESCRIPTION" Language="en_US"><Text>A modern nation rooted in Black Sea and steppe histories, Kyivan urban traditions, Cossack self-government, agricultural wealth of the chernozem belt, civic culture, and defensive sovereignty.</Text></Row>
 		<Row Tag="LOC_TRAIT_UKRAINE_ABILITY_NAME" Language="en_US"><Text>Breadbasket and Bastion</Text></Row>
-		<Row Tag="LOC_TRAIT_UKRAINE_ABILITY_DESCRIPTION" Language="en_US"><Text>Design target: food and gold from fertile farms, production while repairing or defending, and strong rail-era industry. V0.1 is a playable shell pending custom modifier testing.</Text></Row>
+		<Row Tag="LOC_TRAIT_UKRAINE_ABILITY_DESCRIPTION" Language="en_US"><Text>All Settlements receive +2 [icon:YIELD_FOOD] Food and +1 [icon:YIELD_GOLD] Gold. +3 War Support in wars you did not start.</Text></Row>
 		<Row Tag="LOC_LOADING_CIV_INTRO_TEXT_UKRAINE" Language="en_US"><Text>From fertile black earth to industrial cities, Ukraine endures through harvest, culture, and civic defense.</Text></Row>
 
+		<!-- Pontic Scythia cities -->
 		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_1" Language="en_US"><Text>Neapolis Scythica</Text></Row>
-		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_2" Language="en_US"><Text>Kamiana Mohyla</Text></Row>
-		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_3" Language="en_US"><Text>Olbia Pontica</Text></Row>
-		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_4" Language="en_US"><Text>Gelonus</Text></Row>
-		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_5" Language="en_US"><Text>Chersonesus</Text></Row>
+		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_2" Language="en_US"><Text>Gelonus</Text></Row>
+		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_3" Language="en_US"><Text>Kamiana Mohyla</Text></Row>
+		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_4" Language="en_US"><Text>Olbia Pontica</Text></Row>
+		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_5" Language="en_US"><Text>Borysthenes</Text></Row>
+		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_6" Language="en_US"><Text>Tyras</Text></Row>
+		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_7" Language="en_US"><Text>Pantikapaion</Text></Row>
+		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_8" Language="en_US"><Text>Chersonesus</Text></Row>
+		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_9" Language="en_US"><Text>Tanais</Text></Row>
+		<Row Tag="LOC_CITY_NAME_PONTIC_SCYTHIA_10" Language="en_US"><Text>Exampaeus</Text></Row>
 
+		<!-- Kyivan Rus' cities -->
 		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_1" Language="en_US"><Text>Kyiv</Text></Row>
 		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_2" Language="en_US"><Text>Chernihiv</Text></Row>
 		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_3" Language="en_US"><Text>Pereiaslav</Text></Row>
 		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_4" Language="en_US"><Text>Halych</Text></Row>
 		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_5" Language="en_US"><Text>Volodymyr</Text></Row>
-		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_6" Language="en_US"><Text>Turov</Text></Row>
+		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_6" Language="en_US"><Text>Turiv</Text></Row>
+		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_7" Language="en_US"><Text>Novhorod-Siverskyi</Text></Row>
+		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_8" Language="en_US"><Text>Liubech</Text></Row>
+		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_9" Language="en_US"><Text>Kaniv</Text></Row>
+		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_10" Language="en_US"><Text>Vyshhorod</Text></Row>
+		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_11" Language="en_US"><Text>Bilhorod</Text></Row>
+		<Row Tag="LOC_CITY_NAME_KYIVAN_RUS_12" Language="en_US"><Text>Ovruch</Text></Row>
 
+		<!-- Ukraine cities -->
 		<Row Tag="LOC_CITY_NAME_UKRAINE_1" Language="en_US"><Text>Kyiv</Text></Row>
 		<Row Tag="LOC_CITY_NAME_UKRAINE_2" Language="en_US"><Text>Lviv</Text></Row>
 		<Row Tag="LOC_CITY_NAME_UKRAINE_3" Language="en_US"><Text>Kharkiv</Text></Row>
@@ -48,9 +66,34 @@
 		<Row Tag="LOC_CITY_NAME_UKRAINE_8" Language="en_US"><Text>Poltava</Text></Row>
 		<Row Tag="LOC_CITY_NAME_UKRAINE_9" Language="en_US"><Text>Vinnytsia</Text></Row>
 		<Row Tag="LOC_CITY_NAME_UKRAINE_10" Language="en_US"><Text>Ivano-Frankivsk</Text></Row>
+		<Row Tag="LOC_CITY_NAME_UKRAINE_11" Language="en_US"><Text>Cherkasy</Text></Row>
+		<Row Tag="LOC_CITY_NAME_UKRAINE_12" Language="en_US"><Text>Sumy</Text></Row>
+		<Row Tag="LOC_CITY_NAME_UKRAINE_13" Language="en_US"><Text>Zhytomyr</Text></Row>
+		<Row Tag="LOC_CITY_NAME_UKRAINE_14" Language="en_US"><Text>Mykolaiv</Text></Row>
+		<Row Tag="LOC_CITY_NAME_UKRAINE_15" Language="en_US"><Text>Ternopil</Text></Row>
+		<Row Tag="LOC_CITY_NAME_UKRAINE_16" Language="en_US"><Text>Uzhhorod</Text></Row>
 
-		<Row Tag="LOC_UNLOCK_PLAY_AS_XERXES_PONTIC_SCYTHIA_TOOLTIP" Language="en_US"><Text>Strategic pairing: steppe cavalry and imperial warfare themes.</Text></Row>
-		<Row Tag="LOC_UNLOCK_PLAY_AS_CATHERINE_KYIVAN_RUS_TOOLTIP" Language="en_US"><Text>Historical-region pairing: Eastern European court culture and diplomacy.</Text></Row>
-		<Row Tag="LOC_UNLOCK_PLAY_AS_FRANKLIN_UKRAINE_TOOLTIP" Language="en_US"><Text>Strategic pairing: trade, civic institutions, and modern diplomacy.</Text></Row>
+		<!-- Unique units -->
+		<Row Tag="LOC_UNIT_SAKA_HORSE_ARCHER_NAME" Language="en_US"><Text>Saka Horse Archer</Text></Row>
+		<Row Tag="LOC_UNIT_SAKA_HORSE_ARCHER_DESCRIPTION" Language="en_US"><Text>Pontic Scythia Unique Cavalry Unit. Replaces the Chariot. Stronger on open flat terrain.</Text></Row>
+		<Row Tag="LOC_UNIT_SAKA_HORSE_ARCHER_2_DESCRIPTION" Language="en_US"><Text>Pontic Scythia Unique Cavalry Unit. Replaces the Horseman. Stronger on open flat terrain.</Text></Row>
+		<Row Tag="LOC_ABILITY_SAKA_HORSE_ARCHER_COMBAT_PREVIEW" Language="en_US"><Text>+{1_Amount} Combat Strength on Flat terrain</Text></Row>
+
+		<Row Tag="LOC_UNIT_DRUZHINA_NAME" Language="en_US"><Text>Druzhina</Text></Row>
+		<Row Tag="LOC_UNIT_DRUZHINA_DESCRIPTION" Language="en_US"><Text>Kyivan Rus' Unique Cavalry Unit. Replaces the Courser. Stronger in friendly territory.</Text></Row>
+		<Row Tag="LOC_UNIT_DRUZHINA_2_DESCRIPTION" Language="en_US"><Text>Kyivan Rus' Unique Cavalry Unit. Replaces the Knight. Stronger in friendly territory.</Text></Row>
+		<Row Tag="LOC_UNIT_DRUZHINA_3_DESCRIPTION" Language="en_US"><Text>Kyivan Rus' Unique Cavalry Unit. Replaces the Lancer. Stronger in friendly territory.</Text></Row>
+		<Row Tag="LOC_ABILITY_DRUZHINA_COMBAT_PREVIEW" Language="en_US"><Text>+{1_Amount} Combat Strength in friendly territory</Text></Row>
+
+		<Row Tag="LOC_UNIT_SICH_RIFLEMEN_NAME" Language="en_US"><Text>Sich Riflemen</Text></Row>
+		<Row Tag="LOC_UNIT_SICH_RIFLEMEN_DESCRIPTION" Language="en_US"><Text>Ukraine Unique Infantry Unit. Replaces Line Infantry. Stronger in friendly territory.</Text></Row>
+		<Row Tag="LOC_UNIT_SICH_RIFLEMEN_2_DESCRIPTION" Language="en_US"><Text>Ukraine Unique Infantry Unit. Replaces the Rifleman. Stronger in friendly territory.</Text></Row>
+		<Row Tag="LOC_UNIT_SICH_RIFLEMEN_3_DESCRIPTION" Language="en_US"><Text>Ukraine Unique Infantry Unit. Replaces the Infantry Company. Stronger in friendly territory.</Text></Row>
+		<Row Tag="LOC_ABILITY_SICH_RIFLEMEN_COMBAT_PREVIEW" Language="en_US"><Text>+{1_Amount} Combat Strength in friendly territory</Text></Row>
+
+		<!-- Leader pairing tooltips -->
+		<Row Tag="LOC_UNLOCK_PLAY_AS_XERXES_PONTIC_SCYTHIA_TOOLTIP" Language="en_US"><Text>Strategic pairing: imperial frontiers meet the Pontic steppe cavalry tradition.</Text></Row>
+		<Row Tag="LOC_UNLOCK_PLAY_AS_CHARLEMAGNE_KYIVAN_RUS_TOOLTIP" Language="en_US"><Text>Historical pairing: medieval Christian polities, law, and court culture.</Text></Row>
+		<Row Tag="LOC_UNLOCK_PLAY_AS_LAFAYETTE_UKRAINE_TOOLTIP" Language="en_US"><Text>Strategic pairing: civic liberty, republican ideals, and defensive struggle.</Text></Row>
 	</LocalizedText>
 </Database>

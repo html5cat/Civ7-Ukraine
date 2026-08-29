@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Riders of the Pontic Steppe:
+     1. +1 Movement for Cavalry units
+     2. +3 Combat Strength for Cavalry
+     3. +2 Gold in the capital (steppe trade / kurgan wealth)
+
+     Effects/collections copy proven base-game / Bharat patterns. -->
+<GameEffects xmlns="GameEffects">
+	<Modifier id="PONTIC_SCYTHIA_MOD_CAVALRY_MOVEMENT" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_MOVEMENT" permanent="true">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_UNIT_TAG_MATCHES">
+				<Argument name="Tag">UNIT_CLASS_CAVALRY</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">1</Argument>
+		<String context="Description">LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_NAME</String>
+	</Modifier>
+	<Modifier id="PONTIC_SCYTHIA_MOD_CAVALRY_COMBAT" collection="COLLECTION_PLAYER_COMBAT" effect="EFFECT_ADJUST_UNIT_STRENGTH_MODIFIER">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_UNIT_TAG_MATCHES">
+				<Argument name="Tag">UNIT_CLASS_CAVALRY</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">3</Argument>
+		<String context="Preview">LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_COMBAT_PREVIEW</String>
+	</Modifier>
+	<Modifier id="PONTIC_SCYTHIA_MOD_HORSE_GOLD" collection="COLLECTION_PLAYER_CAPITAL_CITY" effect="EFFECT_CITY_ADJUST_YIELD">
+		<Argument name="YieldType">YIELD_GOLD</Argument>
+		<Argument name="Amount">2</Argument>
+		<Argument name="Tooltip">LOC_TRAIT_PONTIC_SCYTHIA_ABILITY_NAME</Argument>
+	</Modifier>
+</GameEffects>

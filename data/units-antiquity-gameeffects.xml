@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Saka Horse Archer: +4 Combat Strength on flat open terrain. -->
+<GameEffects xmlns="GameEffects">
+	<Modifier id="SAKA_HORSE_ARCHER_MOD_OPEN_TERRAIN_COMBAT" collection="COLLECTION_UNIT_COMBAT" effect="EFFECT_ADJUST_UNIT_STRENGTH_MODIFIER">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_UNIT_TAG_MATCHES">
+				<Argument name="Tag">UNIT_CLASS_SAKA_HORSE_ARCHER</Argument>
+			</Requirement>
+			<Requirement type="REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES">
+				<Argument name="TerrainType">TERRAIN_FLAT</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">4</Argument>
+		<String context="Preview">LOC_ABILITY_SAKA_HORSE_ARCHER_COMBAT_PREVIEW</String>
+	</Modifier>
+</GameEffects>

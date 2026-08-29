@@ -1,69 +1,79 @@
 # Ukraine: Historical Continuity
 
-This is a Civilization VII mod scaffold for an historically grounded Ukrainian all-age path.
+A Civilization VII mod that adds a historically grounded Ukrainian all-age path:
+
+| Age | Civilization | Ability | Unique Unit |
+| --- | --- | --- | --- |
+| Antiquity | **Pontic Scythia** | Riders of the Pontic Steppe | Saka Horse Archer |
+| Exploration | **Kyivan Rus'** | Route from the Varangians | Druzhina |
+| Modern | **Ukraine** | Breadbasket and Bastion | Sich Riflemen |
 
 ## Historical Framing
 
-The mod deliberately avoids claiming that modern Ukraine existed in Antiquity. Instead, it uses an age-appropriate continuity chain:
+The mod does **not** claim that modern Ukraine existed in Antiquity. It uses an age-appropriate continuity chain tied to lands and institutions of the Ukrainian historical region:
 
-- Antiquity: Pontic Scythia
-  - Historically tied to the Pontic-Caspian steppe, including present-day southern Ukraine.
-  - Theme: horse mobility, steppe trade, kurgan culture.
-- Exploration: Kyivan Rus'
-  - Medieval polity centered on Kyiv.
-  - Theme: river trade, urban law, Orthodox culture, diplomacy.
-- Modern: Ukraine
-  - Modern Ukrainian nation.
-  - Theme: fertile agriculture, civic resilience, rail/industrial reconstruction, defensive sovereignty.
+- **Pontic Scythia** — Iranian-speaking steppe peoples of the Pontic-Caspian steppe (including southern Ukraine); horse warfare, kurgan culture, Black Sea trade.
+- **Kyivan Rus'** — medieval polity centered on Kyiv; river trade (“from the Varangians to the Greeks”), Orthodox conversion (988), princely law and diplomacy.
+- **Ukraine** — modern nation; chernozem agriculture, Cossack traditions of self-rule, civic resilience, defensive sovereignty.
 
-## V0.1 Scope
+Unique units avoid colliding with Russia’s Cossacks by using **Sich Riflemen** (Sichovi Striltsi) for Modern Ukraine.
 
-This first version focuses on loadable structure:
+## Abilities
 
-- `.modinfo`
-- shell setup entries
-- three age-specific civilizations
-- transition unlocks from Pontic Scythia to Kyivan Rus' to Ukraine
-- city names, descriptions, traits, tags, and start biases
+### Pontic Scythia — Riders of the Pontic Steppe
+- Cavalry: +1 Movement, +3 Combat Strength
+- Capital: +2 Gold
 
-Custom gameplay modifiers, unique units, unique improvements, icons, and civic trees should be added after validating the shell in Civ7 logs.
+### Kyivan Rus' — Route from the Varangians
+- Settlements on navigable rivers: +2 Gold, +1 Culture
+- Capital: +1 Influence (Diplomacy yield)
 
-## Target Mechanics
+### Ukraine — Breadbasket and Bastion
+- All settlements: +2 Food, +1 Gold
+- +3 War Support in wars you did not start
 
-### Pontic Scythia: Riders of the Pontic Steppe
+## Unique Units
 
-- Cavalry gains movement or combat strength on flat open terrain.
-- Horse and pasture starts are favored.
-- Unique improvement: Kurgan, producing Culture and Gold near pastures or open land.
-
-### Kyivan Rus': Route from the Varangians
-
-- River settlements and trade routes generate Gold and Culture.
-- Fortified river cities gain defensive benefits.
-- Unique unit: Druzhina.
-- Unique building or quarter: Veche Square or Saint Sophia Quarter.
-
-### Ukraine: Breadbasket and Bastion
-
-- Farms on fertile flat land generate Food and Gold.
-- Rail/factory infrastructure converts agricultural strength into Production or GDP.
-- During defensive wars, cities gain Production toward units and repairs.
-- Unique improvement: Chernozem Farm.
-- Unique unit: Sich Riflemen or Cossack Host, depending on final age placement.
+- **Saka Horse Archer** — replaces Chariot / Horseman; bonus Combat Strength on flat terrain
+- **Druzhina** — replaces Courser / Knight / Lancer; bonus Combat Strength in friendly territory
+- **Sich Riflemen** — replaces Line Infantry / Rifleman / Infantry Company; bonus Combat Strength in friendly territory
 
 ## Install
 
-Copy the whole `ukraine-historical-continuity` folder to:
+Copy this folder into your Civ VII Mods directory:
 
 ```text
-~/Library/Application Support/Civilization VII/Mods/
+# macOS
+~/Library/Application Support/Civilization VII/Mods/ukraine-historical-continuity/
+
+# Windows
+%USERPROFILE%\AppData\Local\Firaxis Games\Sid Meier's Civilization VII\Mods\ukraine-historical-continuity\
+
+# Linux (Proton / native paths may vary)
+~/.local/share/Civilization VII/Mods/ukraine-historical-continuity/
 ```
 
-Restart Civilization VII, enable the mod, and inspect:
+Restart Civilization VII, enable **Ukraine: Historical Continuity**, then check:
 
 ```text
-~/Library/Application Support/Civilization VII/Logs/mods.log
-~/Library/Application Support/Civilization VII/Logs/database.log
+Logs/mods.log
+Logs/database.log
 ```
 
-The first validation target is that the three civilizations appear in the correct age setup menus without database errors.
+You should see the three civilizations in the matching age setup menus without database errors.
+
+## Validate (optional)
+
+```bash
+python3 scripts/validate_mod.py
+```
+
+## Leader pairings (setup highlights)
+
+| Leader | Civ | Reason |
+| --- | --- | --- |
+| Xerxes | Pontic Scythia | Strategic — imperial frontier / steppe cavalry |
+| Charlemagne | Kyivan Rus' | Historical — medieval Christian polity |
+| Lafayette | Ukraine | Strategic — civic liberty / defensive struggle |
+
+Any leader can still lead any civilization; these are recommended pairings only.
